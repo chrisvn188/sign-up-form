@@ -2,6 +2,7 @@
   font-family: NorseBold;
   src: url(./Norse-Bold.otf);
 }
+
 *,
 *::before,
 *::after {
@@ -48,9 +49,11 @@ h6 {
 .container {
   display: flex;
 }
+
 .form-container {
   align-self: center;
 }
+
 .image-container {
   width: 30rem;
   height: 100vh;
@@ -62,6 +65,7 @@ h6 {
     object-fit: cover;
   }
 }
+
 .logo {
   position: absolute;
   top: 10rem;
@@ -81,6 +85,7 @@ h6 {
     font-family: NorseBold;
   }
 }
+
 .img-description {
   position: absolute;
   bottom: 1rem;
@@ -94,6 +99,7 @@ h6 {
     color: white;
   }
 }
+
 .intro-text {
   font-size: 1.25rem;
   font-weight: 700;
@@ -106,12 +112,15 @@ h6 {
     display: block;
   }
 }
+
 .form-container {
   width: 100%;
 }
+
 #form {
   padding: 1rem 3rem;
 }
+
 .form-box {
   background-color: rgb(255, 255, 255);
   margin-left: -3rem;
@@ -125,6 +134,7 @@ h6 {
     margin-bottom: 1rem;
   }
 }
+
 .form-controls {
   display: flex;
   max-width: 40rem;
@@ -133,6 +143,7 @@ h6 {
   row-gap: 1rem;
   width: 100%;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -146,23 +157,30 @@ h6 {
     border-radius: 3px;
     border: 1px solid gray;
     padding: 3px;
+    outline: none;
+  }
+  & input:focus {
+    border: 1px solid blue;
+    box-shadow: 1px 2px 3px 0px rgba(128, 128, 128, 0.5);
   }
 }
 
 #submit-btn {
   margin-top: 2rem;
-  background-color: #596d48;
+  background-color: #56391c;
   padding: 0.75rem 2.5rem;
   border: none;
   border-radius: 5px;
   color: white;
 }
+
 span.login-text {
   display: block;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
+
 a.login-link {
   font-weight: 700;
-  color: #596d48;
+  color: #56391c;
   text-decoration: none;
 }
