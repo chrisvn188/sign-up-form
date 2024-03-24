@@ -148,6 +148,8 @@ h6 {
   display: flex;
   flex-direction: column;
   width: calc(50% - 3rem);
+  position: relative;
+
   & label {
     text-transform: uppercase;
     font-size: 0.8rem;
@@ -155,13 +157,30 @@ h6 {
   }
   & input {
     border-radius: 3px;
-    border: 1px solid gray;
+    border: 1px solid #e5e7eb;
     padding: 3px;
     outline: none;
   }
   & input:focus {
     border: 1px solid blue;
     box-shadow: 1px 2px 3px 0px rgba(128, 128, 128, 0.5);
+  }
+
+  & .error-text {
+    visibility: hidden;
+    position: absolute;
+    bottom: -1.1rem;
+  }
+
+  &.error {
+    & input {
+      border-color: red;
+    }
+    & .error-text {
+      color: red;
+      font-size: 0.8rem;
+      visibility: visible;
+    }
   }
 }
 
